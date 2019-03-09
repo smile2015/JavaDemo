@@ -21,6 +21,7 @@ public class fastjson_1_2_2_Demo {
         demo.setSex("男");
         demo.setBirthday("1569-08-01");
         System.out.println("获取某个元素的具体值:"+JSON.toJSONString(demo.getName()));
+        String demo1=JSON.toJSONString(demo);
         return JSON.toJSONString(demo);
     }
 

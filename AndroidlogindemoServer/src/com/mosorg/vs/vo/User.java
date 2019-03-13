@@ -17,23 +17,30 @@ public class User  implements Serializable{
 	 * 
 	 */
 	private static final long serialVersionUID = 1L;
-	//	 {"ret":"0","errcode":"0","msg":"接口调用成功","nickname":"erom","userhead":"/img/users/head/avatar.png",
-//	"userid":"11653","email":"123456789@qq.com","role":"0"}
-	private String userid;//用户id
-	private String nickname;//昵称
-	private String userhead;//用户头像路径 
-	private String email;//用户邮件
-	
-	private String name;
+	//用户id
+		private String userid;
+		//昵称
+		private String nickname;
+		//用户头像路径 
+		private String userhead;
+		//用户邮件
+		private String email;
+		
+		//账号
+		private String account;
+		
+		//手机号
+		private String phone;
+		
+		//密码
+		private String password;
 
-	private Integer age;
+		private Integer age;
 
-	private String sex;
-	
-	private String role;//角色 是不是管理员
-	
-	
-	
+		private String sex;
+		
+		//角色 是不是管理员
+		private String role;
 	
 	
 	public String getRole() {
@@ -68,13 +75,6 @@ public class User  implements Serializable{
 		this.email = email;
 	}
 	
-	public String getName() {
-		return name;
-	}
-
-	public void setName(String name) {
-		this.name = name;
-	}
 
 	public Integer getAge() {
 		return age;
@@ -91,6 +91,23 @@ public class User  implements Serializable{
 	public void setSex(String sex) {
 		this.sex = sex;
 	}
+	public String getAccount() {
+		return account;
+	}
+	public void setAccount(String account) {
+		this.account = account;
+	}
+	public String getPhone() {
+		return phone;
+	}
+	public void setPhone(String phone) {
+		this.phone = phone;
+	}
+	public String getPassword() {
+		return password;
+	}
+	public void setPassword(String password) {
+		this.password = password;
+	}
  
-
 }

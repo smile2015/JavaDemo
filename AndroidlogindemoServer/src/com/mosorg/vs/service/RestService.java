@@ -20,7 +20,7 @@ public class RestService {
 	@Produces(MediaType.APPLICATION_XML)
 	public User getUserXml() {
 		User user = new User();
-		user.setName("snail");
+		user.setAccount("snail");
 		user.setAge(22);
 		user.setSex("male");
 		return user;
@@ -31,7 +31,7 @@ public class RestService {
 	@Produces(MediaType.APPLICATION_JSON)
 	public User getUserJson() {
 		User user = new User();
-		user.setName("snail");
+		user.setAccount("snail");
 		user.setAge(22);
 		user.setSex("male");
 		return user;

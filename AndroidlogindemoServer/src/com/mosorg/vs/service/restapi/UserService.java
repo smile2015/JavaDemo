@@ -30,7 +30,7 @@ public class UserService {
 		user.setNickname("smile");
 		user.setAge(23);
 		user.setEmail("mwb20088@163.com");
-		user.setName("mwb");
+		user.setAccount("mwb");
 		user.setSex("man");
 		user.setUserid("U11002");
 		user.setUserhead("/img/users/head/avatar.png");
@@ -53,7 +53,7 @@ public class UserService {
 		user.setNickname("smile");
 		user.setAge(23);
 		user.setEmail("mwb20088@163.com");
-		user.setName("mwb");
+		user.setAccount("mwb");
 		user.setSex("man");
 		user.setUserid("U11002");
 		user.setUserhead("/img/users/head/avatar.png");
@@ -75,7 +75,7 @@ public class UserService {
 		user.setNickname("smile");
 		user.setAge(23);
 		user.setEmail("mwb20088@163.com");
-		user.setName("mwb");
+		user.setAccount("mwb");
 		user.setSex("man");
 		user.setUserid("U11002");
 		user.setUserhead("/img/users/head/avatar.png");

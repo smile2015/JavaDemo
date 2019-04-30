@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite failures="0" time="1.981" errors="1" skipped="0" tests="1" name="com.maventest.account.TestAccount">
+  <properties>
+    <property name="jboss.i18n.generate-proxies" value="true"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="sun.boot.library.path" value="C:\MyEclipse\Common\binary\com.sun.java.jdk.win32.x86_64_1.6.0.013\jre\bin"/>
+    <property name="java.vm.version" value="11.3-b02"/>
+    <property name="java.vm.vendor" value="Sun Microsystems Inc."/>
+    <property name="java.vendor.url" value="http://java.sun.com/"/>
+    <property name="path.separator" value=";"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.country" value="CN"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="C:\Users\MyPC\Workspaces\MyEclipse 10\StandardMavenDemo1"/>
+    <property name="java.runtime.version" value="1.6.0_13-b03"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="basedir" value="C:\Users\MyPC\Workspaces\MyEclipse 10\StandardMavenDemo1"/>
+    <property name="java.endorsed.dirs" value="C:\MyEclipse\Common\binary\com.sun.java.jdk.win32.x86_64_1.6.0.013\jre\lib\endorsed"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="surefire.real.class.path" value="C:\Users\MyPC\Workspaces\MyEclipse 10\StandardMavenDemo1\target\surefire\surefirebooter5366066719277647327.jar"/>
+    <property name="java.io.tmpdir" value="C:\Users\MyPC\AppData\Local\Temp\"/>
+    <property name="line.separator" value="
+"/>
+    <property name="java.vm.specification.vendor" value="Sun Microsystems Inc."/>
+    <property name="user.variant" value=""/>
+    <property name="os.name" value="Windows Vista"/>
+    <property name="sun.jnu.encoding" value="GBK"/>
+    <property name="java.library.path" value="C:\MyEclipse\Common\binary\com.sun.java.jdk.win32.x86_64_1.6.0.013\jre\bin;.;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\ProgramData\Oracle\Java\javapath;C:\Python27\;C:\Python27\Scripts;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\Git\cmd;C:\Program Files\TortoiseGit\bin;；C:\Program Files\Java\jdk1.8.0_101\\bin;C:\Program Files\Java\jdk1.8.0_101\\jre\bin;C:\Program Files (x86)\nodejs\;C:\Program Files (x86)\Appium;C:\Program Files (x86)\Appium\node_modules\.bin;C:\maven3.6.0\bin\;;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C;C:\Users\MyPC\AppData\Roaming\npm"/>
+    <property name="surefire.test.class.path" value="C:\Users\MyPC\Workspaces\MyEclipse 10\StandardMavenDemo1\target\test-classes;C:\Users\MyPC\Workspaces\MyEclipse 10\StandardMavenDemo1\target\classes;C:\Users\MyPC\.m2\repository\log4j\log4j\1.2.17\log4j-1.2.17.jar;C:\Users\MyPC\.m2\repository\junit\junit\4.11-beta-1\junit-4.11-beta-1.jar;C:\Users\MyPC\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\MyPC\.m2\repository\javax\servlet\servlet-api\2.5\servlet-api-2.5.jar;C:\Users\MyPC\.m2\repository\mysql\mysql-connector-java\5.1.21\mysql-connector-java-5.1.21.jar;C:\Users\MyPC\.m2\repository\com\alibaba\druid\0.2.8\druid-0.2.8.jar;C:\Users\MyPC\.m2\repository\org\aspectj\aspectjweaver\1.7.0\aspectjweaver-1.7.0.jar;C:\Users\MyPC\.m2\repository\org\hibernate\hibernate-core\4.1.7.Final\hibernate-core-4.1.7.Final.jar;C:\Users\MyPC\.m2\repository\antlr\antlr\2.7.7\antlr-2.7.7.jar;C:\Users\MyPC\.m2\repository\org\jboss\logging\jboss-logging\3.1.0.GA\jboss-logging-3.1.0.GA.jar;C:\Users\MyPC\.m2\repository\org\jboss\spec\javax\transaction\jboss-transaction-api_1.1_spec\1.0.0.Final\jboss-transaction-api_1.1_spec-1.0.0.Final.jar;C:\Users\MyPC\.m2\repository\dom4j\dom4j\1.6.1\dom4j-1.6.1.jar;C:\Users\MyPC\.m2\repository\org\hibernate\javax\persistence\hibernate-jpa-2.0-api\1.0.1.Final\hibernate-jpa-2.0-api-1.0.1.Final.jar;C:\Users\MyPC\.m2\repository\org\javassist\javassist\3.15.0-GA\javassist-3.15.0-GA.jar;C:\Users\MyPC\.m2\repository\org\hibernate\common\hibernate-commons-annotations\4.0.1.Final\hibernate-commons-annotations-4.0.1.Final.jar;C:\Users\MyPC\.m2\repository\org\apache\struts\struts2-core\2.3.4.1\struts2-core-2.3.4.1.jar;C:\Users\MyPC\.m2\repository\org\apache\struts\xwork\xwork-core\2.3.4.1\xwork-core-2.3.4.1.jar;C:\Users\MyPC\.m2\repository\asm\asm\3.3\asm-3.3.jar;C:\Users\MyPC\.m2\repository\asm\asm-commons\3.3\asm-commons-3.3.jar;C:\Users\MyPC\.m2\repository\asm\asm-tree\3.3\asm-tree-3.3.jar;C:\Users\MyPC\.m2\repository\org\freemarker\freemarker\2.3.19\freemarker-2.3.19.jar;C:\Users\MyPC\.m2\repository\ognl\ognl\3.0.5\ognl-3.0.5.jar;C:\Users\MyPC\.m2\repository\commons-fileupload\commons-fileupload\1.2.2\commons-fileupload-1.2.2.jar;C:\Users\MyPC\.m2\repository\commons-io\commons-io\2.0.1\commons-io-2.0.1.jar;C:\MyEclipse\Common\binary\com.sun.java.jdk.win32.x86_64_1.6.0.013\jre\..\lib\tools.jar;C:\Users\MyPC\.m2\repository\org\apache\struts\struts2-spring-plugin\2.3.4.1\struts2-spring-plugin-2.3.4.1.jar;C:\Users\MyPC\.m2\repository\org\apache\commons\commons-lang3\3.1\commons-lang3-3.1.jar;C:\Users\MyPC\.m2\repository\org\apache\struts\struts2-convention-plugin\2.3.4.1\struts2-convention-plugin-2.3.4.1.jar;C:\Users\MyPC\.m2\repository\org\springframework\spring-core\3.1.2.RELEASE\spring-core-3.1.2.RELEASE.jar;C:\Users\MyPC\.m2\repository\org\springframework\spring-asm\3.1.2.RELEASE\spring-asm-3.1.2.RELEASE.jar;C:\Users\MyPC\.m2\repository\commons-logging\commons-logging\1.1.1\commons-logging-1.1.1.jar;C:\Users\MyPC\.m2\repository\org\springframework\spring-context\3.1.2.RELEASE\spring-context-3.1.2.RELEASE.jar;C:\Users\MyPC\.m2\repository\org\springframework\spring-aop\3.1.2.RELEASE\spring-aop-3.1.2.RELEASE.jar;C:\Users\MyPC\.m2\repository\org\springframework\spring-jdbc\3.1.2.RELEASE\spring-jdbc-3.1.2.RELEASE.jar;C:\Users\MyPC\.m2\repository\org\springframework\spring-tx\3.1.2.RELEASE\spring-tx-3.1.2.RELEASE.jar;C:\Users\MyPC\.m2\repository\org\springframework\spring-beans\3.1.2.RELEASE\spring-beans-3.1.2.RELEASE.jar;C:\Users\MyPC\.m2\repository\org\springframework\spring-web\3.1.2.RELEASE\spring-web-3.1.2.RELEASE.jar;C:\Users\MyPC\.m2\repository\aopalliance\aopalliance\1.0\aopalliance-1.0.jar;C:\Users\MyPC\.m2\repository\org\springframework\spring-expression\3.1.2.RELEASE\spring-expression-3.1.2.RELEASE.jar;C:\Users\MyPC\.m2\repository\org\springframework\spring-orm\3.1.2.RELEASE\spring-orm-3.1.2.RELEASE.jar;"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="50.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Server Compiler"/>
+    <property name="os.version" value="6.2"/>
+    <property name="user.home" value="C:\Users\MyPC"/>
+    <property name="user.timezone" value="Asia/Shanghai"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="java.specification.version" value="1.6"/>
+    <property name="file.encoding" value="GBK"/>
+    <property name="user.name" value="MyPC"/>
+    <property name="java.class.path" value="C:\Users\MyPC\Workspaces\MyEclipse 10\StandardMavenDemo1\target\test-classes;C:\Users\MyPC\Workspaces\MyEclipse 10\StandardMavenDemo1\target\classes;C:\Users\MyPC\.m2\repository\log4j\log4j\1.2.17\log4j-1.2.17.jar;C:\Users\MyPC\.m2\repository\junit\junit\4.11-beta-1\junit-4.11-beta-1.jar;C:\Users\MyPC\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\MyPC\.m2\repository\javax\servlet\servlet-api\2.5\servlet-api-2.5.jar;C:\Users\MyPC\.m2\repository\mysql\mysql-connector-java\5.1.21\mysql-connector-java-5.1.21.jar;C:\Users\MyPC\.m2\repository\com\alibaba\druid\0.2.8\druid-0.2.8.jar;C:\Users\MyPC\.m2\repository\org\aspectj\aspectjweaver\1.7.0\aspectjweaver-1.7.0.jar;C:\Users\MyPC\.m2\repository\org\hibernate\hibernate-core\4.1.7.Final\hibernate-core-4.1.7.Final.jar;C:\Users\MyPC\.m2\repository\antlr\antlr\2.7.7\antlr-2.7.7.jar;C:\Users\MyPC\.m2\repository\org\jboss\logging\jboss-logging\3.1.0.GA\jboss-logging-3.1.0.GA.jar;C:\Users\MyPC\.m2\repository\org\jboss\spec\javax\transaction\jboss-transaction-api_1.1_spec\1.0.0.Final\jboss-transaction-api_1.1_spec-1.0.0.Final.jar;C:\Users\MyPC\.m2\repository\dom4j\dom4j\1.6.1\dom4j-1.6.1.jar;C:\Users\MyPC\.m2\repository\org\hibernate\javax\persistence\hibernate-jpa-2.0-api\1.0.1.Final\hibernate-jpa-2.0-api-1.0.1.Final.jar;C:\Users\MyPC\.m2\repository\org\javassist\javassist\3.15.0-GA\javassist-3.15.0-GA.jar;C:\Users\MyPC\.m2\repository\org\hibernate\common\hibernate-commons-annotations\4.0.1.Final\hibernate-commons-annotations-4.0.1.Final.jar;C:\Users\MyPC\.m2\repository\org\apache\struts\struts2-core\2.3.4.1\struts2-core-2.3.4.1.jar;C:\Users\MyPC\.m2\repository\org\apache\struts\xwork\xwork-core\2.3.4.1\xwork-core-2.3.4.1.jar;C:\Users\MyPC\.m2\repository\asm\asm\3.3\asm-3.3.jar;C:\Users\MyPC\.m2\repository\asm\asm-commons\3.3\asm-commons-3.3.jar;C:\Users\MyPC\.m2\repository\asm\asm-tree\3.3\asm-tree-3.3.jar;C:\Users\MyPC\.m2\repository\org\freemarker\freemarker\2.3.19\freemarker-2.3.19.jar;C:\Users\MyPC\.m2\repository\ognl\ognl\3.0.5\ognl-3.0.5.jar;C:\Users\MyPC\.m2\repository\commons-fileupload\commons-fileupload\1.2.2\commons-fileupload-1.2.2.jar;C:\Users\MyPC\.m2\repository\commons-io\commons-io\2.0.1\commons-io-2.0.1.jar;C:\MyEclipse\Common\binary\com.sun.java.jdk.win32.x86_64_1.6.0.013\jre\..\lib\tools.jar;C:\Users\MyPC\.m2\repository\org\apache\struts\struts2-spring-plugin\2.3.4.1\struts2-spring-plugin-2.3.4.1.jar;C:\Users\MyPC\.m2\repository\org\apache\commons\commons-lang3\3.1\commons-lang3-3.1.jar;C:\Users\MyPC\.m2\repository\org\apache\struts\struts2-convention-plugin\2.3.4.1\struts2-convention-plugin-2.3.4.1.jar;C:\Users\MyPC\.m2\repository\org\springframework\spring-core\3.1.2.RELEASE\spring-core-3.1.2.RELEASE.jar;C:\Users\MyPC\.m2\repository\org\springframework\spring-asm\3.1.2.RELEASE\spring-asm-3.1.2.RELEASE.jar;C:\Users\MyPC\.m2\repository\commons-logging\commons-logging\1.1.1\commons-logging-1.1.1.jar;C:\Users\MyPC\.m2\repository\org\springframework\spring-context\3.1.2.RELEASE\spring-context-3.1.2.RELEASE.jar;C:\Users\MyPC\.m2\repository\org\springframework\spring-aop\3.1.2.RELEASE\spring-aop-3.1.2.RELEASE.jar;C:\Users\MyPC\.m2\repository\org\springframework\spring-jdbc\3.1.2.RELEASE\spring-jdbc-3.1.2.RELEASE.jar;C:\Users\MyPC\.m2\repository\org\springframework\spring-tx\3.1.2.RELEASE\spring-tx-3.1.2.RELEASE.jar;C:\Users\MyPC\.m2\repository\org\springframework\spring-beans\3.1.2.RELEASE\spring-beans-3.1.2.RELEASE.jar;C:\Users\MyPC\.m2\repository\org\springframework\spring-web\3.1.2.RELEASE\spring-web-3.1.2.RELEASE.jar;C:\Users\MyPC\.m2\repository\aopalliance\aopalliance\1.0\aopalliance-1.0.jar;C:\Users\MyPC\.m2\repository\org\springframework\spring-expression\3.1.2.RELEASE\spring-expression-3.1.2.RELEASE.jar;C:\Users\MyPC\.m2\repository\org\springframework\spring-orm\3.1.2.RELEASE\spring-orm-3.1.2.RELEASE.jar;"/>
+    <property name="java.vm.specification.version" value="1.0"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="C:\MyEclipse\Common\binary\com.sun.java.jdk.win32.x86_64_1.6.0.013\jre"/>
+    <property name="java.specification.vendor" value="Sun Microsystems Inc."/>
+    <property name="user.language" value="zh"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.6.0_13"/>
+    <property name="java.ext.dirs" value="C:\MyEclipse\Common\binary\com.sun.java.jdk.win32.x86_64_1.6.0.013\jre\lib\ext;C:\Windows\Sun\Java\lib\ext"/>
+    <property name="sun.boot.class.path" value="C:\MyEclipse\Common\binary\com.sun.java.jdk.win32.x86_64_1.6.0.013\jre\lib\resources.jar;C:\MyEclipse\Common\binary\com.sun.java.jdk.win32.x86_64_1.6.0.013\jre\lib\rt.jar;C:\MyEclipse\Common\binary\com.sun.java.jdk.win32.x86_64_1.6.0.013\jre\lib\sunrsasign.jar;C:\MyEclipse\Common\binary\com.sun.java.jdk.win32.x86_64_1.6.0.013\jre\lib\jsse.jar;C:\MyEclipse\Common\binary\com.sun.java.jdk.win32.x86_64_1.6.0.013\jre\lib\jce.jar;C:\MyEclipse\Common\binary\com.sun.java.jdk.win32.x86_64_1.6.0.013\jre\lib\charsets.jar;C:\MyEclipse\Common\binary\com.sun.java.jdk.win32.x86_64_1.6.0.013\jre\classes"/>
+    <property name="java.vendor" value="Sun Microsystems Inc."/>
+    <property name="localRepository" value="C:\Users\MyPC\.m2\repository"/>
+    <property name="file.separator" value="\"/>
+    <property name="java.vendor.url.bug" value="http://java.sun.com/cgi-bin/bugreport.cgi"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.desktop" value="windows"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+  </properties>
+  <testcase time="1.941" classname="com.maventest.account.TestAccount" name="test">
+    <error message="Table &apos;PIMS.ACCOUNT&apos; doesn&apos;t exist; SQL [n/a]; nested exception is org.hibernate.exception.SQLGrammarException: Table &apos;PIMS.ACCOUNT&apos; doesn&apos;t exist" type="org.springframework.dao.InvalidDataAccessResourceUsageException">org.springframework.dao.InvalidDataAccessResourceUsageException: Table &apos;PIMS.ACCOUNT&apos; doesn&apos;t exist; SQL [n/a]; nested exception is org.hibernate.exception.SQLGrammarException: Table &apos;PIMS.ACCOUNT&apos; doesn&apos;t exist
+	at org.springframework.orm.hibernate4.SessionFactoryUtils.convertHibernateAccessException(SessionFactoryUtils.java:151)
+	at org.springframework.orm.hibernate4.HibernateTransactionManager.convertHibernateAccessException(HibernateTransactionManager.java:606)
+	at org.springframework.orm.hibernate4.HibernateTransactionManager.doCommit(HibernateTransactionManager.java:488)
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.processCommit(AbstractPlatformTransactionManager.java:754)
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.commit(AbstractPlatformTransactionManager.java:723)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.commitTransactionAfterReturning(TransactionAspectSupport.java:394)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:120)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:172)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:90)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:172)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:202)
+	at $Proxy17.addAccount(Unknown Source)
+	at com.maventest.account.TestAccount.test(TestAccount.java:32)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.apache.maven.surefire.junit4.JUnit4TestSet.execute(JUnit4TestSet.java:35)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:146)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:97)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.apache.maven.surefire.booter.ProviderFactory$ClassLoaderProxy.invoke(ProviderFactory.java:103)
+	at $Proxy0.invoke(Unknown Source)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:145)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcess(SurefireStarter.java:87)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:69)
+Caused by: org.hibernate.exception.SQLGrammarException: Table &apos;PIMS.ACCOUNT&apos; doesn&apos;t exist
+	at org.hibernate.exception.internal.SQLExceptionTypeDelegate.convert(SQLExceptionTypeDelegate.java:82)
+	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:49)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:125)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:110)
+	at org.hibernate.engine.jdbc.internal.proxy.AbstractStatementProxyHandler.continueInvocation(AbstractStatementProxyHandler.java:129)
+	at org.hibernate.engine.jdbc.internal.proxy.AbstractProxyHandler.invoke(AbstractProxyHandler.java:81)
+	at $Proxy19.executeUpdate(Unknown Source)
+	at org.hibernate.engine.jdbc.batch.internal.NonBatchingBatch.addToBatch(NonBatchingBatch.java:56)
+	at org.hibernate.persister.entity.AbstractEntityPersister.insert(AbstractEntityPersister.java:2962)
+	at org.hibernate.persister.entity.AbstractEntityPersister.insert(AbstractEntityPersister.java:3403)
+	at org.hibernate.action.internal.EntityInsertAction.execute(EntityInsertAction.java:88)
+	at org.hibernate.engine.spi.ActionQueue.execute(ActionQueue.java:362)
+	at org.hibernate.engine.spi.ActionQueue.executeActions(ActionQueue.java:354)
+	at org.hibernate.engine.spi.ActionQueue.executeActions(ActionQueue.java:275)
+	at org.hibernate.event.internal.AbstractFlushingEventListener.performExecutions(AbstractFlushingEventListener.java:326)
+	at org.hibernate.event.internal.DefaultFlushEventListener.onFlush(DefaultFlushEventListener.java:52)
+	at org.hibernate.internal.SessionImpl.flush(SessionImpl.java:1210)
+	at org.hibernate.internal.SessionImpl.managedFlush(SessionImpl.java:399)
+	at org.hibernate.engine.transaction.internal.jdbc.JdbcTransaction.beforeTransactionCommit(JdbcTransaction.java:101)
+	at org.hibernate.engine.transaction.spi.AbstractTransactionImpl.commit(AbstractTransactionImpl.java:175)
+	at org.springframework.orm.hibernate4.HibernateTransactionManager.doCommit(HibernateTransactionManager.java:480)
+	... 39 more
+Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table &apos;PIMS.ACCOUNT&apos; doesn&apos;t exist
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:39)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:27)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:513)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:411)
+	at com.mysql.jdbc.Util.getInstance(Util.java:386)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1053)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4074)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4006)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2468)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2629)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2719)
+	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:2155)
+	at com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:2450)
+	at com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:2371)
+	at com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:2355)
+	at com.alibaba.druid.filter.FilterChainImpl.preparedStatement_executeUpdate(FilterChainImpl.java:2717)
+	at com.alibaba.druid.filter.FilterAdapter.preparedStatement_executeUpdate(FilterAdapter.java:1052)
+	at com.alibaba.druid.filter.FilterEventAdapter.preparedStatement_executeUpdate(FilterEventAdapter.java:491)
+	at com.alibaba.druid.filter.FilterChainImpl.preparedStatement_executeUpdate(FilterChainImpl.java:2715)
+	at com.alibaba.druid.proxy.jdbc.PreparedStatementProxyImpl.executeUpdate(PreparedStatementProxyImpl.java:106)
+	at com.alibaba.druid.pool.DruidPooledPreparedStatement.executeUpdate(DruidPooledPreparedStatement.java:237)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.hibernate.engine.jdbc.internal.proxy.AbstractStatementProxyHandler.continueInvocation(AbstractStatementProxyHandler.java:122)
+	... 55 more
+</error>
+    <system-out>@HL
+@HL-------------------------------------------------------
+@HL T E S T S
+@HL-------------------------------------------------------
+@SLRunning com.maventest.account.TestAccount
+[org.springframework.context.support.ClassPathXmlApplicationContext]Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@488e32e7: startup date [Tue Apr 30 17:35:16 CST 2019]; root of context hierarchy
+[org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [spring.xml]
+[org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [spring-hibernate.xml]
+[org.springframework.beans.factory.config.PropertyPlaceholderConfigurer]Loading properties file from class path resource [config.properties]
+[org.springframework.beans.factory.support.DefaultListableBeanFactory]Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@538d7ace: defining beans [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,accountDao,accountService,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,dataSource,sessionFactory,transactionManager,transactionAdvice,org.springframework.aop.config.internalAutoProxyCreator,transactionPointcut,org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0,org.springframework.context.annotation.ConfigurationClassPostProcessor$ImportAwareBeanPostProcessor#0]; root of factory hierarchy
+[com.alibaba.druid.pool.DruidAbstractDataSource]maxIdle is deprecated
+[com.alibaba.druid.pool.DruidDataSource]{dataSource-1} inited
+[org.hibernate.annotations.common.Version]HCANN000001: Hibernate Commons Annotations {4.0.1.Final}
+[org.hibernate.Version]HHH000412: Hibernate Core {4.1.7.Final}
+[org.hibernate.cfg.Environment]HHH000206: hibernate.properties not found
+[org.hibernate.cfg.Environment]HHH000021: Bytecode provider name : javassist
+[org.hibernate.dialect.Dialect]HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+[org.hibernate.engine.transaction.internal.TransactionFactoryInitiator]HHH000399: Using default transaction strategy (direct JDBC transactions)
+[org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory]HHH000397: Using ASTQueryTranslatorFactory
+[org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000228: Running hbm2ddl schema update
+[org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000102: Fetching database metadata
+[org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000396: Updating schema
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: pims.ACCOUNT
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [id, pwd, name, modifydatetime, createdatetime]
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000232: Schema update complete
+[org.springframework.orm.hibernate4.HibernateTransactionManager]Using DataSource [{
+	CreateTime:&quot;2019-04-30 17:35:16&quot;,
+	ActiveCount:0,
+	PoolingCount:1,
+	CreateCount:1,
+	DestroyCount:0,
+	CloseCount:2,
+	ConnectCount:2,
+	Connections:[
+		{ID:121165166, ConnectTime:&quot;2019-04-30 17:35:17&quot;, UseCount:2, LastActiveTime:&quot;2019-04-30 17:35:18&quot;}
+	]
+}] of Hibernate SessionFactory for HibernateTransactionManager
+[com.maventest.service.impl.AccountServiceImpl]Log4j：进入 Account Add Service
+[org.hibernate.engine.jdbc.spi.SqlExceptionHelper]SQL Error: 1146, SQLState: 42S02
+[org.hibernate.engine.jdbc.spi.SqlExceptionHelper]Table &apos;PIMS.ACCOUNT&apos; doesn&apos;t exist
+[org.hibernate.engine.jdbc.batch.internal.AbstractBatchImpl]HHH000010: On release of batch it still contained JDBC statements
+</system-out>
+  </testcase>
+</testsuite>

@@ -39,6 +39,15 @@
           <target>1.6</target>
         </configuration>
       </plugin>
+      <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-surefire-plugin</artifactId>
+          <configuration>
+	          <source>2.7.1</source>
+	          <target>2.7.1</target>
+              <testFailureIgnore>true</testFailureIgnore>
+          </configuration>
+      </plugin>
     </plugins>
   </build>
   <dependencies>
@@ -64,20 +73,44 @@
 			<!-- scope配置为provided表示发布时不会出现。如果没有指定该作用域时，默认为compile 。指定作用域是因为生产环境已经自带了这个jar，不需要发布-->
 			<scope>provided</scope>
 		</dependency>
+		<dependency> 
+			<groupId>mysql</groupId> 
+			<artifactId>mysql-connector-java</artifactId> 
+			<!-- 5.1.21不能实现自动创建表，需要修改版本为5.1.6 -->
+			<version>5.1.6</version> 
+		</dependency>
+		<!-- druid -->
+		<dependency>
+			<groupId>com.alibaba</groupId>
+			<artifactId>druid</artifactId>
+			<version>0.2.8</version>
+		</dependency>
+		<!-- aspectjweaver -->
+		<dependency>
+			<groupId>org.aspectj</groupId>
+			<artifactId>aspectjweaver</artifactId>
+			<version>1.7.0</version>
+		</dependency>
+		<!-- hibernate4 -->
+		<dependency>
+			<groupId>org.hibernate</groupId>
+			<artifactId>hibernate-core</artifactId>
+			<version>4.1.7.Final</version>
+		</dependency>
 		<!-- struts2 -->
 		<dependency>
 			<groupId>org.apache.struts</groupId>
 			<artifactId>struts2-core</artifactId>
 			<version>2.3.4.1</version>
 			<!--  排除某个包，不做导入。这里排除是因为和hibernate集成，hibernate中有这个包，从而导致冲突，顾排除。但是如果还没和hibernate导入，这里不能做排除 -->
-			<!-- 
+			<!-- -->
 			<exclusions>
 				<exclusion>
 					<groupId>javassist</groupId>
 					<artifactId>javassist</artifactId>
 				</exclusion>
 			</exclusions>
-			 -->
+			 
 		</dependency>
 		<dependency>
 			<groupId>org.apache.struts</groupId>

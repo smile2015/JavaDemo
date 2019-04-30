@@ -53,8 +53,41 @@
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
 			<version>4.11-beta-1</version>
-			<!-- scope配置为test表示仅测试使用，发布包不会使用到该jar包 -->
+			<!-- scope配置为test表示仅测试使用，发布包不会使用到该jar包。如果没有指定该作用域时，默认为compile -->
 			<scope>test</scope>
+		</dependency>
+		<!-- servlet -->
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>servlet-api</artifactId>
+			<version>2.5</version>
+			<!-- scope配置为provided表示发布时不会出现。如果没有指定该作用域时，默认为compile 。指定作用域是因为生产环境已经自带了这个jar，不需要发布-->
+			<scope>provided</scope>
+		</dependency>
+		<!-- struts2 -->
+		<dependency>
+			<groupId>org.apache.struts</groupId>
+			<artifactId>struts2-core</artifactId>
+			<version>2.3.4.1</version>
+			<!--  排除某个包，不做导入。这里排除是因为和hibernate集成，hibernate中有这个包，从而导致冲突，顾排除。但是如果还没和hibernate导入，这里不能做排除 -->
+			<!-- 
+			<exclusions>
+				<exclusion>
+					<groupId>javassist</groupId>
+					<artifactId>javassist</artifactId>
+				</exclusion>
+			</exclusions>
+			 -->
+		</dependency>
+		<dependency>
+			<groupId>org.apache.struts</groupId>
+			<artifactId>struts2-spring-plugin</artifactId>
+			<version>2.3.4.1</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.struts</groupId>
+			<artifactId>struts2-convention-plugin</artifactId>
+			<version>2.3.4.1</version>
 		</dependency>
 		<!-- spring3 -->
 		<dependency>

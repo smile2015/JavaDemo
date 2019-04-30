@@ -10,5 +10,7 @@ package com.maventest.service;
 public interface UserServiceI {
 	
 	public void addUser();
+	
+	public void delUser();
 
 }

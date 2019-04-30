@@ -26,8 +26,14 @@ public class UserServiceImpl implements UserServiceI {
 	@Override
 	public void addUser() {
 		
-		logger.info("log4j use");
+		logger.info("Log4j：进入 User Add Service");
 
+	}
+
+	@Override
+	public void delUser() {
+		
+		logger.info("Log4j：进入 User Del Service");
 	}
 
 }

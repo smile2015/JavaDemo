@@ -1,0 +1,125 @@
+2019-05-07 19:49:33  [ main:0 ] - [ INFO ]  Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@6fb000e7: startup date [Tue May 07 19:49:33 CST 2019]; root of context hierarchy
+2019-05-07 19:49:33  [ main:49 ] - [ INFO ]  Loading XML bean definitions from class path resource [spring.xml]
+2019-05-07 19:49:33  [ main:206 ] - [ INFO ]  Loading XML bean definitions from class path resource [spring-hibernate.xml]
+2019-05-07 19:49:33  [ main:372 ] - [ INFO ]  Loading properties file from class path resource [config.properties]
+2019-05-07 19:49:33  [ main:406 ] - [ INFO ]  Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@29d381d2: defining beans [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,accountDao,accountService,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,dataSource,sessionFactory,transactionManager,transactionAdvice,org.springframework.aop.config.internalAutoProxyCreator,transactionPointcut,org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0,org.springframework.context.annotation.ConfigurationClassPostProcessor$ImportAwareBeanPostProcessor#0]; root of factory hierarchy
+2019-05-07 19:49:33  [ main:683 ] - [ ERROR ]  maxIdle is deprecated
+2019-05-07 19:49:33  [ main:683 ] - [ ERROR ]  maxIdle is deprecated
+2019-05-07 19:49:34  [ main:743 ] - [ INFO ]  {dataSource-1} inited
+2019-05-07 19:49:34  [ main:1023 ] - [ INFO ]  HCANN000001: Hibernate Commons Annotations {4.0.1.Final}
+2019-05-07 19:49:34  [ main:1028 ] - [ INFO ]  HHH000412: Hibernate Core {4.1.7.Final}
+2019-05-07 19:49:34  [ main:1030 ] - [ INFO ]  HHH000206: hibernate.properties not found
+2019-05-07 19:49:34  [ main:1031 ] - [ INFO ]  HHH000021: Bytecode provider name : javassist
+2019-05-07 19:49:34  [ main:1338 ] - [ INFO ]  HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2019-05-07 19:49:34  [ main:1345 ] - [ INFO ]  HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+2019-05-07 19:49:34  [ main:1354 ] - [ INFO ]  HHH000399: Using default transaction strategy (direct JDBC transactions)
+2019-05-07 19:49:34  [ main:1358 ] - [ INFO ]  HHH000397: Using ASTQueryTranslatorFactory
+2019-05-07 19:49:34  [ main:1509 ] - [ INFO ]  HHH000228: Running hbm2ddl schema update
+2019-05-07 19:49:34  [ main:1510 ] - [ INFO ]  HHH000102: Fetching database metadata
+2019-05-07 19:49:34  [ main:1512 ] - [ INFO ]  HHH000396: Updating schema
+2019-05-07 19:49:34  [ main:1534 ] - [ INFO ]  HHH000261: Table found: pims.account
+2019-05-07 19:49:34  [ main:1534 ] - [ INFO ]  HHH000037: Columns: [id, pwd, name, modifydatetime, createdatetime]
+2019-05-07 19:49:34  [ main:1534 ] - [ INFO ]  HHH000108: Foreign keys: []
+2019-05-07 19:49:34  [ main:1534 ] - [ INFO ]  HHH000126: Indexes: [id, name_2, name, primary]
+2019-05-07 19:49:34  [ main:1535 ] - [ INFO ]  HHH000232: Schema update complete
+2019-05-07 19:49:34  [ main:1610 ] - [ INFO ]  Using DataSource [{
+	CreateTime:"2019-05-07 19:49:33",
+	ActiveCount:0,
+	PoolingCount:1,
+	CreateCount:1,
+	DestroyCount:0,
+	CloseCount:2,
+	ConnectCount:2,
+	Connections:[
+		{ID:935521285, ConnectTime:"2019-05-07 19:49:34", UseCount:2, LastActiveTime:"2019-05-07 19:49:34"}
+	]
+}] of Hibernate SessionFactory for HibernateTransactionManager
+2019-05-07 19:49:34  [ main:1635 ] - [ INFO ]  =============================fdsafds==============
+2019-05-07 19:49:34  [ main:1636 ] - [ INFO ]  Account[id=9956eb05-3340-48df-8a2e-b7e561244ef4,name=七星云-恒312,pwd=Smil112243,createdatetime=<null>,modifydatetime=<null>]
+2019-05-07 19:49:34  [ main:1697 ] - [ INFO ]  Log4j：进入 Account Add Service
+2019-05-07 19:49:35  [ main:1811 ] - [ WARN ]  SQL Error: 1062, SQLState: 23000
+2019-05-07 19:49:35  [ main:1811 ] - [ ERROR ]  Duplicate entry 'ä¸ƒæ˜Ÿäº‘-æ�’312' for key 'NAME'
+2019-05-07 19:49:35  [ main:1811 ] - [ ERROR ]  Duplicate entry 'ä¸ƒæ˜Ÿäº‘-æ�’312' for key 'NAME'
+2019-05-07 19:49:35  [ main:1817 ] - [ INFO ]  HHH000010: On release of batch it still contained JDBC statements
+2019-05-07 19:49:58  [ main:0 ] - [ INFO ]  Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@6fb000e7: startup date [Tue May 07 19:49:58 CST 2019]; root of context hierarchy
+2019-05-07 19:49:58  [ main:49 ] - [ INFO ]  Loading XML bean definitions from class path resource [spring.xml]
+2019-05-07 19:49:58  [ main:197 ] - [ INFO ]  Loading XML bean definitions from class path resource [spring-hibernate.xml]
+2019-05-07 19:49:58  [ main:362 ] - [ INFO ]  Loading properties file from class path resource [config.properties]
+2019-05-07 19:49:59  [ main:401 ] - [ INFO ]  Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@4934ce4a: defining beans [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,accountDao,accountService,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,dataSource,sessionFactory,transactionManager,transactionAdvice,org.springframework.aop.config.internalAutoProxyCreator,transactionPointcut,org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0,org.springframework.context.annotation.ConfigurationClassPostProcessor$ImportAwareBeanPostProcessor#0]; root of factory hierarchy
+2019-05-07 19:49:59  [ main:674 ] - [ ERROR ]  maxIdle is deprecated
+2019-05-07 19:49:59  [ main:674 ] - [ ERROR ]  maxIdle is deprecated
+2019-05-07 19:49:59  [ main:725 ] - [ INFO ]  {dataSource-1} inited
+2019-05-07 19:49:59  [ main:1007 ] - [ INFO ]  HCANN000001: Hibernate Commons Annotations {4.0.1.Final}
+2019-05-07 19:49:59  [ main:1012 ] - [ INFO ]  HHH000412: Hibernate Core {4.1.7.Final}
+2019-05-07 19:49:59  [ main:1014 ] - [ INFO ]  HHH000206: hibernate.properties not found
+2019-05-07 19:49:59  [ main:1015 ] - [ INFO ]  HHH000021: Bytecode provider name : javassist
+2019-05-07 19:49:59  [ main:1319 ] - [ INFO ]  HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2019-05-07 19:49:59  [ main:1327 ] - [ INFO ]  HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+2019-05-07 19:49:59  [ main:1337 ] - [ INFO ]  HHH000399: Using default transaction strategy (direct JDBC transactions)
+2019-05-07 19:49:59  [ main:1341 ] - [ INFO ]  HHH000397: Using ASTQueryTranslatorFactory
+2019-05-07 19:50:00  [ main:1492 ] - [ INFO ]  HHH000228: Running hbm2ddl schema update
+2019-05-07 19:50:00  [ main:1493 ] - [ INFO ]  HHH000102: Fetching database metadata
+2019-05-07 19:50:00  [ main:1495 ] - [ INFO ]  HHH000396: Updating schema
+2019-05-07 19:50:00  [ main:1517 ] - [ INFO ]  HHH000261: Table found: pims.account
+2019-05-07 19:50:00  [ main:1518 ] - [ INFO ]  HHH000037: Columns: [id, pwd, name, modifydatetime, createdatetime]
+2019-05-07 19:50:00  [ main:1518 ] - [ INFO ]  HHH000108: Foreign keys: []
+2019-05-07 19:50:00  [ main:1518 ] - [ INFO ]  HHH000126: Indexes: [id, name_2, name, primary]
+2019-05-07 19:50:00  [ main:1519 ] - [ INFO ]  HHH000232: Schema update complete
+2019-05-07 19:50:00  [ main:1589 ] - [ INFO ]  Using DataSource [{
+	CreateTime:"2019-05-07 19:49:59",
+	ActiveCount:0,
+	PoolingCount:1,
+	CreateCount:1,
+	DestroyCount:0,
+	CloseCount:2,
+	ConnectCount:2,
+	Connections:[
+		{ID:1845867084, ConnectTime:"2019-05-07 19:49:59", UseCount:2, LastActiveTime:"2019-05-07 19:50:00"}
+	]
+}] of Hibernate SessionFactory for HibernateTransactionManager
+2019-05-07 19:50:00  [ main:1616 ] - [ INFO ]  =============================fdsafds==============
+2019-05-07 19:50:00  [ main:1617 ] - [ INFO ]  Account[id=c44d16ea-52d0-4377-b687-3c5061cc5681,name=七星云-恒312,pwd=Smil112243,createdatetime=<null>,modifydatetime=<null>]
+2019-05-07 19:50:00  [ main:1679 ] - [ INFO ]  Log4j：进入 Account Add Service
+2019-05-07 19:50:00  [ main:1793 ] - [ WARN ]  SQL Error: 1062, SQLState: 23000
+2019-05-07 19:50:00  [ main:1794 ] - [ ERROR ]  Duplicate entry 'ä¸ƒæ˜Ÿäº‘-æ�’312' for key 'NAME'
+2019-05-07 19:50:00  [ main:1794 ] - [ ERROR ]  Duplicate entry 'ä¸ƒæ˜Ÿäº‘-æ�’312' for key 'NAME'
+2019-05-07 19:50:00  [ main:1801 ] - [ INFO ]  HHH000010: On release of batch it still contained JDBC statements
+2019-05-07 19:52:04  [ main:0 ] - [ INFO ]  Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@6fb000e7: startup date [Tue May 07 19:52:04 CST 2019]; root of context hierarchy
+2019-05-07 19:52:04  [ main:50 ] - [ INFO ]  Loading XML bean definitions from class path resource [spring.xml]
+2019-05-07 19:52:04  [ main:197 ] - [ INFO ]  Loading XML bean definitions from class path resource [spring-hibernate.xml]
+2019-05-07 19:52:04  [ main:368 ] - [ INFO ]  Loading properties file from class path resource [config.properties]
+2019-05-07 19:52:04  [ main:404 ] - [ INFO ]  Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@4934ce4a: defining beans [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,accountDao,accountService,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,dataSource,sessionFactory,transactionManager,transactionAdvice,org.springframework.aop.config.internalAutoProxyCreator,transactionPointcut,org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0,org.springframework.context.annotation.ConfigurationClassPostProcessor$ImportAwareBeanPostProcessor#0]; root of factory hierarchy
+2019-05-07 19:52:04  [ main:682 ] - [ ERROR ]  maxIdle is deprecated
+2019-05-07 19:52:04  [ main:682 ] - [ ERROR ]  maxIdle is deprecated
+2019-05-07 19:52:04  [ main:732 ] - [ INFO ]  {dataSource-1} inited
+2019-05-07 19:52:05  [ main:1020 ] - [ INFO ]  HCANN000001: Hibernate Commons Annotations {4.0.1.Final}
+2019-05-07 19:52:05  [ main:1025 ] - [ INFO ]  HHH000412: Hibernate Core {4.1.7.Final}
+2019-05-07 19:52:05  [ main:1027 ] - [ INFO ]  HHH000206: hibernate.properties not found
+2019-05-07 19:52:05  [ main:1028 ] - [ INFO ]  HHH000021: Bytecode provider name : javassist
+2019-05-07 19:52:05  [ main:1336 ] - [ INFO ]  HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2019-05-07 19:52:05  [ main:1344 ] - [ INFO ]  HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+2019-05-07 19:52:05  [ main:1353 ] - [ INFO ]  HHH000399: Using default transaction strategy (direct JDBC transactions)
+2019-05-07 19:52:05  [ main:1357 ] - [ INFO ]  HHH000397: Using ASTQueryTranslatorFactory
+2019-05-07 19:52:05  [ main:1515 ] - [ INFO ]  HHH000228: Running hbm2ddl schema update
+2019-05-07 19:52:05  [ main:1516 ] - [ INFO ]  HHH000102: Fetching database metadata
+2019-05-07 19:52:05  [ main:1519 ] - [ INFO ]  HHH000396: Updating schema
+2019-05-07 19:52:05  [ main:1542 ] - [ INFO ]  HHH000261: Table found: pims.account
+2019-05-07 19:52:05  [ main:1543 ] - [ INFO ]  HHH000037: Columns: [id, pwd, name, modifydatetime, createdatetime]
+2019-05-07 19:52:05  [ main:1543 ] - [ INFO ]  HHH000108: Foreign keys: []
+2019-05-07 19:52:05  [ main:1543 ] - [ INFO ]  HHH000126: Indexes: [id, name_2, name, primary]
+2019-05-07 19:52:05  [ main:1544 ] - [ INFO ]  HHH000232: Schema update complete
+2019-05-07 19:52:05  [ main:1608 ] - [ INFO ]  Using DataSource [{
+	CreateTime:"2019-05-07 19:52:04",
+	ActiveCount:0,
+	PoolingCount:1,
+	CreateCount:1,
+	DestroyCount:0,
+	CloseCount:2,
+	ConnectCount:2,
+	Connections:[
+		{ID:1180541820, ConnectTime:"2019-05-07 19:52:05", UseCount:2, LastActiveTime:"2019-05-07 19:52:05"}
+	]
+}] of Hibernate SessionFactory for HibernateTransactionManager
+2019-05-07 19:52:05  [ main:1635 ] - [ INFO ]  =============================fdsafds==============
+2019-05-07 19:52:05  [ main:1635 ] - [ INFO ]  Account[id=a0675b3e-e090-400e-a543-e1e709836e31,name=������-��312,pwd=Smil112243,createdatetime=<null>,modifydatetime=<null>]
+2019-05-07 19:52:05  [ main:1700 ] - [ INFO ]  Log4j������ Account Add Service

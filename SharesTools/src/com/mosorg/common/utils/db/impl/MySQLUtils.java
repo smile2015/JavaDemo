@@ -22,7 +22,7 @@ import com.mosorg.common.utils.log.LogHelper;
 public class MySQLUtils extends DBUtils {
 	private static String URL = "jdbc:mysql://127.0.0.1:3306/finance?useUnicode=true&characterEncoding=utf-8";
 	private static String USER = "root";
-	private static String PASSWORD = "MINGtian2010";
+	private static String PASSWORD = "";
 	private static String DRIVER="com.mysql.jdbc.Driver";
 
 	static {

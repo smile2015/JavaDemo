@@ -21,6 +21,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   </head>
   
   <body >
+  
     <form action="company/add" method="post">
     <table border="1">
     <th align="center" bgcolor="green" colspan="2">添加证券公司信息</th>

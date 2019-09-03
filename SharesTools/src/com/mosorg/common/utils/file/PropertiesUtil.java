@@ -16,7 +16,9 @@ public class PropertiesUtil {
     private static String filePath="config/web.properties";
     
     static{
-    	InputStream ins=ClassLoader.getSystemResourceAsStream(filePath);
+    	System.out.println("filePath: "+filePath);
+    	//InputStream ins=ClassLoader.getSystemResourceAsStream(filePath);
+    	InputStream ins=PropertiesUtil.class.getClassLoader().getResourceAsStream(filePath);
     	try {
 			props.load(ins);
 		} catch (IOException e) {

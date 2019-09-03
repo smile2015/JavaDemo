@@ -3,6 +3,8 @@
  */
 package com.mosorg.sharestools.vo;
 
+import java.math.BigDecimal;
+
 /**
  * @author mwb
  *证券公司信息实体类
@@ -11,7 +13,7 @@ public class Company {
 	
 	private String code;
 	private String name;
-	private Float commissionRate;
+	private BigDecimal commissionRate;
 	
 	public String getCode() {
 		return code;
@@ -25,11 +27,11 @@ public class Company {
 	public void setName(String name) {
 		this.name = name;
 	}
-	public Float getCommissionRate() {
+	public BigDecimal getCommissionRate() {
 		return commissionRate;
 	}
-	public void setCommissionRate(Float commissionRate) {
-		this.commissionRate = commissionRate;
+	public void setCommissionRate(BigDecimal bigDecimal) {
+		this.commissionRate = bigDecimal;
 	}
 	
 	

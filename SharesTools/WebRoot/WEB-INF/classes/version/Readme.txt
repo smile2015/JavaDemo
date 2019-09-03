@@ -13,5 +13,8 @@ MySQL Server version: 6.0.11-alpha-community MySQL Community Server
 SaharesTools-v1.0版本新增功能：
 1、servlet实现添加证券公司并显示到前台页面
 
+SaharesTools-v1.1版本新增功能：
+1、增加前台JSP代码，实现增删改成
+
 
 

@@ -5,6 +5,7 @@ package com.mosorg.sharestools.servlet;
 
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.math.BigDecimal;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
@@ -82,24 +83,67 @@ public class CompanyServlet extends HttpServlet {
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		System.out.println("doPost");
 		
-		//接收前台数据
-		// 处理中文
-		String name =new String(request.getParameter("name").trim().getBytes("ISO8859-1"),"UTF-8");
-		
-		String code = request.getParameter("code").trim();
-		
-		Float commissionRate = StringHelper.ConvertToFloat(request.getParameter("commissionRate").trim());
+		//String url=request.getContextPath();
+		//String url=request.getServletPath();
+		String[] url = request.getRequestURL().toString().split("/");
+		String op=url[url.length-1];
+		System.out.println("url: "+url.toString());
+		System.out.println("op: "+op);
 		
 		Company company=new Company();
-		company.setCode(code);
-		company.setName(name);
-		company.setCommissionRate(commissionRate);
 		
-		int result=companyService.addCompany(company);
 		
-		if(result>0){
-			message="<div style='color: green;'>添加证券公司成功！</div>";
-		}
+		int result=0;
+		
+		if("add".equals(op)){
+			//接收前台数据
+			String code = request.getParameter("code").trim();
+			company.setCode(code);
+			// 处理中文
+			String name =new String(request.getParameter("name").trim().getBytes("ISO8859-1"),"UTF-8");
+			BigDecimal commissionRate = StringHelper.ConvertToBigDecimal(request.getParameter("commissionRate").trim());
+			company.setName(name);
+			company.setCommissionRate(commissionRate);
+			result=companyService.addCompany(company);
+			if(result>0){
+				message="<tr><td ><div style='color: green;'>添加证券公司成功！</div></td></tr>";
+			}
+			}
+		else if("delete".equals(op)){
+			String code = request.getParameter("code").trim();
+			company.setCode(code);
+			result=companyService.deleteCompany(code);
+			if(result>0){
+				message="<tr><td ><div style='color: green;'>删除证券公司成功！</div></td></tr>";
+			}
+			}
+		else if("modify".equals(op)){
+			//接收前台数据
+			String code = request.getParameter("code").trim();
+			company.setCode(code);
+			// 处理中文
+			String name =new String(request.getParameter("name").trim().getBytes("ISO8859-1"),"UTF-8");
+			BigDecimal commissionRate = StringHelper.ConvertToBigDecimal(request.getParameter("commissionRate").trim());
+			company.setName(name);
+			company.setCommissionRate(commissionRate);
+			result=companyService.modifyCompany(company);
+			if(result>0){
+				message="<tr><td ><div style='color: green;'>修改证券公司成功！</div></td></tr>";
+			}
+			}
+		else if("query".equals(op)){
+			String condition=request.getParameter("condition").trim();
+			String key = request.getParameter("key").trim();
+			if("code".equals(condition)){
+				company=companyService.queryCompanyByCode(key);
+			}else if("name".equals(condition)){
+				company=companyService.queryCompanyByName(key);
+			}else if("commissionRate".equals(condition)){
+				company=companyService.queryCompanyByRate(key);
+			}
+			message="<tr><td align='center'>股票代码：</td><td align='center'>公司名称：</td><td align='center'>佣金费率：</td></tr>"+
+				    "<tr><td align='center'>"+company.getCode()+"</td><td align='center'>"+company.getName()+"</td><td align='center'>"+company.getCommissionRate()+"</td></tr>";
+			}
 		
 		// 设置响应内容类型
 		response.setContentType("text/html;charset=UTF-8");
@@ -109,12 +153,14 @@ public class CompanyServlet extends HttpServlet {
 		
 		String docType = "<!DOCTYPE html> \n";
 		out.println(docType +
-		    "<html>\n" +
-		    "<head><title>" + title + "</title></head>\n" +
-		    "<body bgcolor=\"#f0f0f0\">\n" +
-		    "<h1 align=\"center\">" + title + "</h1>\n" 
-		    + message +
-		    "</body></html>");
+		    "<html>\n" 
+			+"<head><title>" + title + "</title></head>\n" 
+		    +"<body bgcolor=\"#f0f0f0\">\n" 
+			+"<h1 align=\"center\">" + title + "</h1>\n"
+			+"<table>"+
+			message
+		    +"<tr><td ><div style='color: green;'><a href='../index.jsp'>返回首页</a></div></td></tr></table>"
+		    + "</body></html>");
 		
 		
 		

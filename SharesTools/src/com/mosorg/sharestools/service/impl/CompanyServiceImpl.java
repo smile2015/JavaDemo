@@ -19,25 +19,13 @@ public class CompanyServiceImpl implements ICompanyService {
 	
 	ICompanyDao companyDao=new CompanyDaoImpl();
 
-	/* (non-Javadoc)
-	 * @see com.mosorg.sharestools.service.ICompanyService#queryCompany(java.lang.String)
-	 */
-	public Company queryCompany(String code) {
-		try {
-			return companyDao.query(code);
-		} catch (SQLException e) {
-			LogHelper.info(e.toString());
-			e.printStackTrace();
-		}
-		return null;
-	}
 
 	/* (non-Javadoc)
 	 * @see com.mosorg.sharestools.service.ICompanyService#deleteCompany(java.lang.String)
 	 */
 	public int deleteCompany(String code) {
 		try {
-			return companyDao.delete(code);
+			return companyDao.deleteCompany(code);
 		} catch (SQLException e) {
 			LogHelper.info(e.toString());
 			e.printStackTrace();
@@ -50,7 +38,7 @@ public class CompanyServiceImpl implements ICompanyService {
 	 */
 	public int modifyCompany(Company company) {
 		try {
-			return companyDao.modify(company);
+			return companyDao.modifyCompany(company);
 		} catch (SQLException e) {
 			LogHelper.info(e.toString());
 			e.printStackTrace();
@@ -63,12 +51,45 @@ public class CompanyServiceImpl implements ICompanyService {
 	 */
 	public int addCompany(Company company) {
 		try {
-			return companyDao.add(company);
+			return companyDao.addCompany(company);
 		} catch (SQLException e) {
 			LogHelper.info(e.toString());
 			e.printStackTrace();
 		}
 		return 0;
+	}
+
+	public Company queryCompanyByName(String name) {
+		try {
+			return companyDao.queryCompanyByName(name);
+		} catch (SQLException e) {
+			LogHelper.info(e.toString());
+			e.printStackTrace();
+		}
+		return null;
+	}
+
+	public Company queryCompanyByRate(String rate) {
+		try {
+			return companyDao.queryCompanyByRate(rate);
+		} catch (SQLException e) {
+			LogHelper.info(e.toString());
+			e.printStackTrace();
+		}
+		return null;
+	}
+	
+	/* (non-Javadoc)
+	 * @see com.mosorg.sharestools.service.ICompanyService#queryCompany(java.lang.String)
+	 */
+	public Company queryCompanyByCode(String code) {
+		try {
+			return companyDao.queryCompanyByCode(code);
+		} catch (SQLException e) {
+			LogHelper.info(e.toString());
+			e.printStackTrace();
+		}
+		return null;
 	}
 
 }

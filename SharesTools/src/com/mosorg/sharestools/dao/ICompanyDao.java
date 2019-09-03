@@ -14,10 +14,12 @@ import com.mosorg.sharestools.vo.Company;
  */
 public interface ICompanyDao {
 
-	public Company query(String code) throws SQLException;
-	public int delete(String code) throws SQLException;
-	public int modify(Company company) throws SQLException;
-	public int add(Company company) throws SQLException;
+	public Company queryCompanyByCode(String code) throws SQLException;
+	public Company queryCompanyByRate(String rate) throws SQLException;
+	public Company queryCompanyByName(String name) throws SQLException;
+	public int addCompany(Company company) throws SQLException;
+	public int modifyCompany(Company company) throws SQLException;
+	public int deleteCompany(String code) throws SQLException;
 	
 	
 }

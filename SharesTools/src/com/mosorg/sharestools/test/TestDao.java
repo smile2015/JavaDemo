@@ -5,6 +5,7 @@ package com.mosorg.sharestools.test;
 
 import java.sql.SQLException;
 
+import com.mosorg.common.utils.convert.StringHelper;
 import com.mosorg.sharestools.dao.ICompanyDao;
 import com.mosorg.sharestools.dao.impl.CompanyDaoImpl;
 import com.mosorg.sharestools.vo.Company;
@@ -24,9 +25,9 @@ public class TestDao {
 		Company company =new Company();
 		company.setCode("600030");
 		company.setName("中信证券");
-		company.setCommissionRate((float) 0.0005);
-		companyDao.delete(company.getCode());
-		System.out.println(companyDao.add(company));
+		company.setCommissionRate(StringHelper.ConvertToBigDecimal("0.00005"));
+		companyDao.deleteCompany(company.getCode());
+		System.out.println(companyDao.addCompany(company));
 	}
 
 }

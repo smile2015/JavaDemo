@@ -31,7 +31,7 @@ DROP TABLE IF EXISTS `companys`;
 CREATE TABLE `companys` (
   `code` varchar(50) NOT NULL DEFAULT '' COMMENT '公司股票代码',
   `name` varchar(255) character set utf8 NOT NULL DEFAULT '' COMMENT '公司名称',
-  `commissionRate` float NOT NULL COMMENT '佣金费率',
+  `commissionRate` varchar(50) NOT NULL COMMENT '佣金费率',
   PRIMARY KEY (`code`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='证券公司信息表';
 
@@ -46,9 +46,9 @@ CREATE TABLE `companys` (
 DROP TABLE IF EXISTS `lucre`;
 CREATE TABLE `lucre` (
   `sharesCode` bigint(20) NOT NULL COMMENT '股票代码',
-  `costMoney` float NOT NULL COMMENT '买入总额',
-  `incomeMoney` float NOT NULL COMMENT '卖出总额',
-  `lestMoney` float NOT NULL COMMENT '剩余市值',
+  `costMoney` varchar(50) NOT NULL COMMENT '买入总额',
+  `incomeMoney` varchar(50) NOT NULL COMMENT '卖出总额',
+  `lestMoney` varchar(50) NOT NULL COMMENT '剩余市值',
   PRIMARY KEY (`sharesCode`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='股票盈亏统计表';
 
@@ -63,7 +63,7 @@ DROP TABLE IF EXISTS `rate`;
 CREATE TABLE `rate` (
   `rateId` bigint(20) NOT NULL,
   `name` varchar(255) character set utf8 NOT NULL,
-  `rate` float NOT NULL,
+  `rate` varchar(50) NOT NULL,
   PRIMARY KEY (`rateId`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='费率表';
 
@@ -78,7 +78,7 @@ DROP TABLE IF EXISTS `shares`;
 CREATE TABLE `shares` (
   `code` varchar(50) NOT NULL COMMENT '公司股票代码',
   `name` varchar(255) character set utf8 NOT NULL COMMENT '公司股票名称',
-  `price` float NOT NULL COMMENT '股票单价',
+  `price` varchar(50) NOT NULL COMMENT '股票单价',
   `quantity` bigint(20) NOT NULL COMMENT '股票股数',
   `transTypeId` bigint(20) NOT NULL COMMENT '交易类型ID，买入或卖出',
   PRIMARY KEY (`code`)

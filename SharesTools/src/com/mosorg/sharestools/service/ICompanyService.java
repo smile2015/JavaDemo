@@ -11,9 +11,11 @@ import com.mosorg.sharestools.vo.Company;
  */
 public interface ICompanyService {
 	
-	public Company queryCompany(String code);
 	public int deleteCompany(String code);
 	public int modifyCompany(Company company);
 	public int addCompany(Company company);
+	public Company queryCompanyByCode(String code);
+	public Company queryCompanyByName(String name);
+	public Company queryCompanyByRate(String rate);
 
 }

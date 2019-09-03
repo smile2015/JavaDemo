@@ -3,14 +3,17 @@
  */
 package com.mosorg.common.utils.convert;
 
+import java.math.BigDecimal;
+import java.text.DecimalFormat;
+
 /**
  * @author mwb
  *
  */
 public class StringHelper {
 	
-	public static Float ConvertToFloat(String value){
-		return Float.parseFloat(value);
+	public static BigDecimal ConvertToBigDecimal(String value) {
+		return new BigDecimal(value);
 	}
 	
 

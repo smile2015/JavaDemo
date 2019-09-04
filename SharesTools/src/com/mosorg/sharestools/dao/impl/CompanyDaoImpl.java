@@ -96,7 +96,10 @@ public class CompanyDaoImpl implements ICompanyDao {
 
 	//模糊查询
 	public ArrayList<Company> queryAllByCode(String code) throws SQLException {
-		String sql="SELECT * FROM companys where code like '"+code+"'";
+		String sql="SELECT * FROM companys where code like '%"+code+"%'";
+		if("".equals(code)||null==code){
+			sql="SELECT * FROM lucres where companys";
+		}
 		ArrayList<Company> companys=new ArrayList<Company>();
 		
 		rs=dbUtils.executeQuery(sql);

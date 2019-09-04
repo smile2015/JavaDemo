@@ -31,6 +31,12 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
      </ul>
     
     </td></tr>
+    <tr><td>
+     <ul>
+       <li><a href="lucre/queryLucre.jsp">查询股票盈亏信息</a></li>
+     </ul>
+    
+    </td></tr>
     </table>
     </div>
   </body>

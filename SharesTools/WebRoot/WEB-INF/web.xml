@@ -9,6 +9,7 @@
     <welcome-file>index.jsp</welcome-file>
   </welcome-file-list>
   
+  <!-- 证券公司信息管理Servlet -->
   <servlet>
   <servlet-name>addCompanyServlet</servlet-name>
   <servlet-class>com.mosorg.sharestools.servlet.company.AddCompanyServlet</servlet-class>
@@ -52,5 +53,33 @@
   <servlet-mapping>
   <servlet-name>loadCompanyServlet</servlet-name>
   <url-pattern>/company/load</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  <servlet-name>showCompanyServlet</servlet-name>
+  <servlet-class>com.mosorg.sharestools.servlet.company.ShowCompanyServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>showCompanyServlet</servlet-name>
+  <url-pattern>/company/show</url-pattern>
+  </servlet-mapping>
+  
+  <!-- 股票盈亏信息管理Servlet -->
+  <servlet>
+  <servlet-name>queryLucreServlet</servlet-name>
+  <servlet-class>com.mosorg.sharestools.servlet.lucre.QueryLucreServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>queryLucreServlet</servlet-name>
+  <url-pattern>/lucre/query</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  <servlet-name>showLucreServlet</servlet-name>
+  <servlet-class>com.mosorg.sharestools.servlet.lucre.ShowLucreServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>showLucreServlet</servlet-name>
+  <url-pattern>/lucre/show</url-pattern>
   </servlet-mapping>
 </web-app>

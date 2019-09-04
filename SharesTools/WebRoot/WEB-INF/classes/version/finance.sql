@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 60011
 File Encoding         : 65001
 
-Date: 2019-09-04 13:37:42
+Date: 2019-09-04 16:19:07
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -29,25 +29,25 @@ CREATE TABLE `companys` (
 -- ----------------------------
 -- Records of companys
 -- ----------------------------
-INSERT INTO `companys` VALUES ('600030', '中信证券24', '0.0005');
-INSERT INTO `companys` VALUES ('6000301', '中信证券1', '0.0005');
+INSERT INTO `companys` VALUES ('600030', '中信证券', '0.0005');
 INSERT INTO `companys` VALUES ('6000302', '中信证券2', '0.0005');
-INSERT INTO `companys` VALUES ('60003023', '中信证券23', '0.0005');
+INSERT INTO `companys` VALUES ('600030243', '中信证券243', '0.0005');
+INSERT INTO `companys` VALUES ('60003027', '中信证券1', '0.0005');
 
 -- ----------------------------
--- Table structure for `lucre`
+-- Table structure for `lucres`
 -- ----------------------------
-DROP TABLE IF EXISTS `lucre`;
-CREATE TABLE `lucre` (
+DROP TABLE IF EXISTS `lucres`;
+CREATE TABLE `lucres` (
   `sharesCode` bigint(20) NOT NULL COMMENT '股票代码',
-  `costMoney` decimal(10,0) NOT NULL COMMENT '买入总额',
-  `incomeMoney` decimal(10,0) NOT NULL COMMENT '卖出总额',
-  `lestMoney` decimal(10,0) NOT NULL COMMENT '剩余市值',
+  `costMoney` varchar(50) NOT NULL COMMENT '买入总额',
+  `incomeMoney` varchar(50) NOT NULL COMMENT '卖出总额',
+  `lestMoney` varchar(50) NOT NULL COMMENT '剩余市值',
   PRIMARY KEY (`sharesCode`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='股票盈亏统计表';
 
 -- ----------------------------
--- Records of lucre
+-- Records of lucres
 -- ----------------------------
 
 -- ----------------------------
@@ -57,13 +57,14 @@ DROP TABLE IF EXISTS `rate`;
 CREATE TABLE `rate` (
   `rateId` bigint(20) NOT NULL,
   `name` varchar(255) NOT NULL,
-  `rate` decimal(10,0) NOT NULL,
+  `rate` varchar(50) NOT NULL,
   PRIMARY KEY (`rateId`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='费率表';
 
 -- ----------------------------
 -- Records of rate
 -- ----------------------------
+INSERT INTO `rate` VALUES ('1001', '印花税', '0.001');
 
 -- ----------------------------
 -- Table structure for `shares`
@@ -72,7 +73,7 @@ DROP TABLE IF EXISTS `shares`;
 CREATE TABLE `shares` (
   `code` varchar(50) NOT NULL COMMENT '公司股票代码',
   `name` varchar(255) NOT NULL COMMENT '公司股票名称',
-  `price` decimal(10,0) NOT NULL COMMENT '股票单价',
+  `price` varchar(50) NOT NULL COMMENT '股票单价',
   `quantity` bigint(20) NOT NULL COMMENT '股票股数',
   `transTypeId` bigint(20) NOT NULL COMMENT '交易类型ID，买入或卖出',
   PRIMARY KEY (`code`)
@@ -95,3 +96,5 @@ CREATE TABLE `transactiontypes` (
 -- ----------------------------
 -- Records of transactiontypes
 -- ----------------------------
+INSERT INTO `transactiontypes` VALUES ('1001', '买入');
+INSERT INTO `transactiontypes` VALUES ('1002', '卖出');

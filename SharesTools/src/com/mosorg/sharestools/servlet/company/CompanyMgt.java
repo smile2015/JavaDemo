@@ -94,6 +94,22 @@ public class CompanyMgt {
 		request.setAttribute("message",message); 
 		request.getRequestDispatcher("modifyCompany.jsp").forward(request, response);
 	}
+	
+	public void showCompany(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException{
+		// 设置响应内容类型
+		response.setContentType("text/html;charset=UTF-8");
+		
+		Company company=new Company();
+		
+		//接收前台数据
+		String code = request.getParameter("code").trim();
+		company=companyService.queryCompanyByCode(code);
+		message="加载证券公司成功！";
+		//转向导JSP并传递数据
+		request.setAttribute("company",company); 
+		request.setAttribute("message",message); 
+		request.getRequestDispatcher("showCompany.jsp").forward(request, response);
+	}
 
 	public void modifyComapy(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException{
 		// 设置响应内容类型

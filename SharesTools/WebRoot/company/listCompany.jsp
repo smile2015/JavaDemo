@@ -28,7 +28,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
     <form action="company/show" method="post">
     <table border="1" width="50%">
     <th align="center" bgcolor="green" colspan="4">证券公司信息</th>
-    <tr><td align="center">股票代码：</td><td align="center">证券公司名称：</td><td align="center">证券公司佣金费率：</td><td align="center">操作</td></tr>
+    <tr><td align="center">股票代码</td><td align="center">证券公司名称</td><td align="center">证券公司佣金费率</td><td align="center">操作</td></tr>
     <%
     if(companys.size()==0){
          out.print("<tr><td align=\"center\" colspan=\"4\">查询结果不存在</td></tr>");
@@ -37,7 +37,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 		Company company = (Company) companys.get(i);
        
 	%> 
-    <tr><td><input type="text" name="code" value="<%=company.getCode()%>"/></td><td><input type="text" name="name" value="<%=company.getName()%>"/></td><td><input type="text" name="commissionRate" value="<%=company.getCommissionRate()%>"/><td colspan="3"><a href="company/show?code=<%=company.getCode()%>">详情</a>|<a href="company/load?code=<%=company.getCode()%>">修改</a>|<a href="company/delete?code=<%=company.getCode()%>">删除</a></td></tr>
+    <tr><td><%=company.getCode()%></td><td><%=company.getName()%></td><td><%=company.getCommissionRate()%><td colspan="3"><a href="company/show?code=<%=company.getCode()%>">详情</a>|<a href="company/load?code=<%=company.getCode()%>">修改</a>|<a href="company/delete?code=<%=company.getCode()%>">删除</a></td></tr>
     <%
      }
 	}

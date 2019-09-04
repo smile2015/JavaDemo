@@ -11,6 +11,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import com.mosorg.sharestools.servlet.company.CompanyMgt;
+import com.mosorg.sharestools.servlet.lucre.LucreMgt;
 
 /**
  * @author mwb
@@ -25,6 +26,7 @@ public class BaseServlet extends HttpServlet {
 	
 	
 	protected CompanyMgt companyMgt=new CompanyMgt();
+	protected LucreMgt lucreMgt=new LucreMgt();
 	
 	/* (non-Javadoc)
 	 * @see javax.servlet.GenericServlet#init()

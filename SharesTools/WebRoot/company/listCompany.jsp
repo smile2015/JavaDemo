@@ -23,21 +23,28 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   </head>
   
   <body >
+  <div align="center">
   <%ArrayList companys =(ArrayList)request.getAttribute( "companys");%>
     <form action="company/show" method="post">
-    <table border="1">
-    <th align="center" bgcolor="green" colspan="2">证券公司信息</th>
+    <table border="1" width="50%">
+    <th align="center" bgcolor="green" colspan="4">证券公司信息</th>
     <tr><td align="center">股票代码：</td><td align="center">证券公司名称：</td><td align="center">证券公司佣金费率：</td><td align="center">操作</td></tr>
     <%
-	for(int i = 0; i < companys.size(); i++) {
-	Company company = (Company) companys.get(i);
+    if(companys.size()==0){
+         out.print("<tr><td align=\"center\" colspan=\"4\">查询结果不存在</td></tr>");
+       }else{
+		for(int i = 0; i < companys.size(); i++) {
+		Company company = (Company) companys.get(i);
+       
 	%> 
     <tr><td><input type="text" name="code" value="<%=company.getCode()%>"/></td><td><input type="text" name="name" value="<%=company.getName()%>"/></td><td><input type="text" name="commissionRate" value="<%=company.getCommissionRate()%>"/><td colspan="3"><a href="company/show?code=<%=company.getCode()%>">详情</a>|<a href="company/load?code=<%=company.getCode()%>">修改</a>|<a href="company/delete?code=<%=company.getCode()%>">删除</a></td></tr>
     <%
+     }
 	}
 	%>
-	<tr><td colspan="4"><a href='index.jsp'>返回首页</a></td></tr>
+	<tr><td colspan="4"><a href='index.jsp'>返回首页</a>|<a href='company/addCompany.jsp'>添加证券公司</a></td></tr>
     </table>
     </form>
+    </div>
   </body>
 </html>

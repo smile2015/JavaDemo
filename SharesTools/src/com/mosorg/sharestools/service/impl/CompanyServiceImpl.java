@@ -94,9 +94,10 @@ public class CompanyServiceImpl implements ICompanyService {
 	}
 
 	//模糊查询
-	public ArrayList queryAllByCode(String code) {
+	@SuppressWarnings("unchecked")
+	public ArrayList<Company> queryAllByCode(String code) {
 		try {
-			return companyDao.queryAllByCode(code);
+			return (ArrayList<Company>) companyDao.queryAllByCode(code);
 		} catch (SQLException e) {
 			LogHelper.info(e.toString());
 			e.printStackTrace();

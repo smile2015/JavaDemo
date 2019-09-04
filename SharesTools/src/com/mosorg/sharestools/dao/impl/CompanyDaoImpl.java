@@ -6,9 +6,7 @@ package com.mosorg.sharestools.dao.impl;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
-import java.util.List;
 
-import com.mosorg.common.utils.convert.StringHelper;
 import com.mosorg.common.utils.db.DBUtils;
 import com.mosorg.common.utils.db.impl.MySQLUtils;
 import com.mosorg.sharestools.dao.ICompanyDao;
@@ -59,9 +57,10 @@ public class CompanyDaoImpl implements ICompanyDao {
 
 	public Company queryCompanyByRate(String rate) throws SQLException {
 		String sql="SELECT * FROM companys where commissionRate='"+rate+"'";
-		Company company=new Company();
+		Company company=null;
 		rs=dbUtils.executeQuery(sql);
 		while(rs.next()){
+			company=new Company();
 			company.setCode(rs.getString("code"));
 			company.setName(rs.getString("name"));
 			company.setCommissionRate(rs.getBigDecimal("commissionRate"));
@@ -71,9 +70,10 @@ public class CompanyDaoImpl implements ICompanyDao {
 
 	public Company queryCompanyByName(String name) throws SQLException {
 		String sql="SELECT * FROM companys where name='"+name+"'";
-		Company company=new Company();
+		Company company=null;
 		rs=dbUtils.executeQuery(sql);
 		while(rs.next()){
+			company=new Company();
 			company.setCode(rs.getString("code"));
 			company.setName(rs.getString("name"));
 			company.setCommissionRate(rs.getBigDecimal("commissionRate"));
@@ -83,9 +83,10 @@ public class CompanyDaoImpl implements ICompanyDao {
 
 	public Company queryCompanyByCode(String code) throws SQLException {
 		String sql="SELECT * FROM companys where code='"+code+"'";
-		Company company=new Company();
+		Company company=null;
 		rs=dbUtils.executeQuery(sql);
 		while(rs.next()){
+			company=new Company();
 			company.setCode(rs.getString("code"));
 			company.setName(rs.getString("name"));
 			company.setCommissionRate(rs.getBigDecimal("commissionRate"));
@@ -94,7 +95,7 @@ public class CompanyDaoImpl implements ICompanyDao {
 	}
 
 	//模糊查询
-	public ArrayList queryAllByCode(String code) throws SQLException {
+	public ArrayList<Company> queryAllByCode(String code) throws SQLException {
 		String sql="SELECT * FROM companys where code like '"+code+"'";
 		ArrayList<Company> companys=new ArrayList<Company>();
 		

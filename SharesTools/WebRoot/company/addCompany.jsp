@@ -21,7 +21,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   </head>
   
   <body >
-  
+  <div align="center">
     <form action="company/add" method="post">
     <table border="1">
     <th align="center" bgcolor="green" colspan="2">添加证券公司信息</th>
@@ -29,7 +29,9 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
     <tr><td align="right">证券公司名称：</td><td><input type="text" name="name"/></td></tr>
     <tr><td align="right">证券公司佣金费率：</td><td><input type="text" name="commissionRate"/></td></tr>
     <tr align="center"><td><input type="submit" value="提交"/></td><td><input type="reset" value="重置"/></td></tr>
+    <tr><td colspan="4"><a href='index.jsp'>返回首页</a></td></tr>
     </table>
     </form>
+    </div>
   </body>
 </html>

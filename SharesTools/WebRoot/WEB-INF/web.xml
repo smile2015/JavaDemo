@@ -11,7 +11,7 @@
   
   <servlet>
   <servlet-name>addCompanyServlet</servlet-name>
-  <servlet-class>com.mosorg.sharestools.servlet.AddCompanyServlet</servlet-class>
+  <servlet-class>com.mosorg.sharestools.servlet.company.AddCompanyServlet</servlet-class>
   </servlet>
   <servlet-mapping>
   <servlet-name>addCompanyServlet</servlet-name>
@@ -20,7 +20,7 @@
   
   <servlet>
   <servlet-name>delCompanyServlet</servlet-name>
-  <servlet-class>com.mosorg.sharestools.servlet.DeleteCompanyServlet</servlet-class>
+  <servlet-class>com.mosorg.sharestools.servlet.company.DeleteCompanyServlet</servlet-class>
   </servlet>
   <servlet-mapping>
   <servlet-name>delCompanyServlet</servlet-name>
@@ -29,7 +29,7 @@
   
   <servlet>
   <servlet-name>modifyCompanyServlet</servlet-name>
-  <servlet-class>com.mosorg.sharestools.servlet.ModifyCompanyServlet</servlet-class>
+  <servlet-class>com.mosorg.sharestools.servlet.company.ModifyCompanyServlet</servlet-class>
   </servlet>
   <servlet-mapping>
   <servlet-name>modifyCompanyServlet</servlet-name>
@@ -38,7 +38,7 @@
   
   <servlet>
   <servlet-name>queryCompanyServlet</servlet-name>
-  <servlet-class>com.mosorg.sharestools.servlet.QueryCompanyServlet</servlet-class>
+  <servlet-class>com.mosorg.sharestools.servlet.company.QueryCompanyServlet</servlet-class>
   </servlet>
   <servlet-mapping>
   <servlet-name>queryCompanyServlet</servlet-name>
@@ -47,7 +47,7 @@
   
   <servlet>
   <servlet-name>loadCompanyServlet</servlet-name>
-  <servlet-class>com.mosorg.sharestools.servlet.LoadCompanyServlet</servlet-class>
+  <servlet-class>com.mosorg.sharestools.servlet.company.LoadCompanyServlet</servlet-class>
   </servlet>
   <servlet-mapping>
   <servlet-name>loadCompanyServlet</servlet-name>

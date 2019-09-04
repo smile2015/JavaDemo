@@ -21,7 +21,7 @@ public interface ICompanyDao {
 	public int addCompany(Company company) throws SQLException;
 	public int modifyCompany(Company company) throws SQLException;
 	public int deleteCompany(String code) throws SQLException;
-	public ArrayList queryAllByCode(String code) throws SQLException;
+	public ArrayList<?> queryAllByCode(String code) throws SQLException;
 	
 	
 }

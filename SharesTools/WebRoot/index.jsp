@@ -20,7 +20,8 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 	-->
   </head>
   
-  <body style="text-align:center;">
+  <body >
+  <div align="center">
     <table border="1">
     <th align="center" bgcolor="green" colspan="2">证券公司信息管理</th>
     <tr><td>
@@ -31,5 +32,6 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
     
     </td></tr>
     </table>
+    </div>
   </body>
 </html>

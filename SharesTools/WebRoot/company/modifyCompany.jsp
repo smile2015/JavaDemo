@@ -22,16 +22,18 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   </head>
   
   <body >
+  <div align="center">
   <%Company company =(Company)request.getAttribute( "company");%>
     <form action="company/modify" method="post">
     <table border="1">
     <th align="center" bgcolor="green" colspan="2">修改证券公司信息</th>
-    <tr><td align="right">股票代码：</td><td><%=company.getCode()%></td></tr>
+    <tr><td align="right">股票代码：</td><td><input type="text" name="code" readonly="readonly" value="<%=company.getCode()%>"/></td></tr>
     <tr><td align="right">证券公司名称：</td><td><input type="text" name="name" value="<%=company.getName()%>"/></td></tr>
     <tr><td align="right">证券公司佣金费率：</td><td><input type="text" name="commissionRate" value="<%=company.getCommissionRate()%>"/></td></tr>
     <tr align="center"><td><input type="submit" value="提交"/></td><td><input type="reset" value="重置"/></td></tr>
     <tr><td colspan="2"><a href='index.jsp'>返回首页</a></td></tr>
     </table>
     </form>
+    </div>
   </body>
 </html>

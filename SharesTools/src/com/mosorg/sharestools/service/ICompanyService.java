@@ -19,6 +19,6 @@ public interface ICompanyService {
 	public Company queryCompanyByCode(String code);
 	public Company queryCompanyByName(String name);
 	public Company queryCompanyByRate(String rate);
-	public ArrayList queryAllByCode(String code);
+	public ArrayList<?> queryAllByCode(String code);
 
 }

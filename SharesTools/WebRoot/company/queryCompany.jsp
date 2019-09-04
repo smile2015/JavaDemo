@@ -28,6 +28,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   </head>
   
   <body >
+  <div align="center">
     <form action="company/query" method="post">
     <table border="0" align="center">
     <th colspan="2" bordercolor="red">证券公司信息管理</th>
@@ -42,8 +43,9 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
     </td>
     <td><input type="text" name="key" id="key" value="请输入查询条件关键字" onclick="clearContent();"></input></td>
     <td colspan="2"><input type="submit" value="查询"/></td></tr>
-    <tr><td colspan="2"><a href='index.jsp'>返回首页</a></td></tr>
+    <tr><td colspan="2"><a href='index.jsp'>返回首页</a>|<a href='company/addCompany.jsp'>添加证券公司</a></td></tr>
     </table>
     </form>
+    </div>
   </body>
 </html>

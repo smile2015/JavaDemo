@@ -21,6 +21,8 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   </head>
   
   <body >
-  <%=request.getAttribute( "message")%>
+  <div align="center">
+  <table><tr><td ><div style='color: green;'><%=request.getAttribute( "message")%></div></td><td ><a href='index.jsp'>返回首页</a></td></tr></table>
+   </div>
   </body>
 </html>

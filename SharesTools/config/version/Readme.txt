@@ -10,14 +10,18 @@ mysql-connector-java-5.1.8-bin.jar
 MySQL Server version: 6.0.11-alpha-community MySQL Community Server
 
 2019.09.03 
-SaharesTools-v1.0版本新增功能：
+SharesTools-v1.0版本新增功能：
 1、servlet实现添加证券公司并显示到前台页面
 
-SaharesTools-v1.1版本新增功能：
+SharesTools-v1.1版本新增功能：
 1、增加前台JSP代码，实现增删改成
 
 2019.09.04
-SaharesTools-v1.2版本新增功能：
+SharesTools-v1.2版本新增功能：
 1、实现Servlet和JSP数据传递
+
+SharesTools-v1.3版本新增功能：
+1、查询不到结果时，JSP页面显示结果不存在异常处理
+2、调整工程目录结构
 
 

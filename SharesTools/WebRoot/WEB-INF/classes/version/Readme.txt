@@ -16,5 +16,8 @@ SaharesTools-v1.0版本新增功能：
 SaharesTools-v1.1版本新增功能：
 1、增加前台JSP代码，实现增删改成
 
+2019.09.04
+SaharesTools-v1.2版本新增功能：
+1、实现Servlet和JSP数据传递
 
 

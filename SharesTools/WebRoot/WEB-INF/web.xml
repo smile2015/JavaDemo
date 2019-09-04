@@ -8,12 +8,49 @@
   <welcome-file-list>
     <welcome-file>index.jsp</welcome-file>
   </welcome-file-list>
+  
   <servlet>
-  <servlet-name>companyServlet</servlet-name>
-  <servlet-class>com.mosorg.sharestools.servlet.CompanyServlet</servlet-class>
+  <servlet-name>addCompanyServlet</servlet-name>
+  <servlet-class>com.mosorg.sharestools.servlet.AddCompanyServlet</servlet-class>
   </servlet>
   <servlet-mapping>
-  <servlet-name>companyServlet</servlet-name>
-  <url-pattern>/company/*</url-pattern>
+  <servlet-name>addCompanyServlet</servlet-name>
+  <url-pattern>/company/add</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  <servlet-name>delCompanyServlet</servlet-name>
+  <servlet-class>com.mosorg.sharestools.servlet.DeleteCompanyServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>delCompanyServlet</servlet-name>
+  <url-pattern>/company/delete</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  <servlet-name>modifyCompanyServlet</servlet-name>
+  <servlet-class>com.mosorg.sharestools.servlet.ModifyCompanyServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>modifyCompanyServlet</servlet-name>
+  <url-pattern>/company/modify</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  <servlet-name>queryCompanyServlet</servlet-name>
+  <servlet-class>com.mosorg.sharestools.servlet.QueryCompanyServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>queryCompanyServlet</servlet-name>
+  <url-pattern>/company/query</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  <servlet-name>loadCompanyServlet</servlet-name>
+  <servlet-class>com.mosorg.sharestools.servlet.LoadCompanyServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>loadCompanyServlet</servlet-name>
+  <url-pattern>/company/load</url-pattern>
   </servlet-mapping>
 </web-app>

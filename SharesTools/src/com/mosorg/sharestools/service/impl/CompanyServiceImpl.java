@@ -4,6 +4,7 @@
 package com.mosorg.sharestools.service.impl;
 
 import java.sql.SQLException;
+import java.util.ArrayList;
 
 import com.mosorg.sharestools.dao.ICompanyDao;
 import com.mosorg.sharestools.dao.impl.CompanyDaoImpl;
@@ -85,6 +86,17 @@ public class CompanyServiceImpl implements ICompanyService {
 	public Company queryCompanyByCode(String code) {
 		try {
 			return companyDao.queryCompanyByCode(code);
+		} catch (SQLException e) {
+			LogHelper.info(e.toString());
+			e.printStackTrace();
+		}
+		return null;
+	}
+
+	//模糊查询
+	public ArrayList queryAllByCode(String code) {
+		try {
+			return companyDao.queryAllByCode(code);
 		} catch (SQLException e) {
 			LogHelper.info(e.toString());
 			e.printStackTrace();

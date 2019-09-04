@@ -4,6 +4,7 @@
 package com.mosorg.sharestools.dao;
 
 import java.sql.SQLException;
+import java.util.ArrayList;
 
 import com.mosorg.sharestools.vo.Company;
 
@@ -20,6 +21,7 @@ public interface ICompanyDao {
 	public int addCompany(Company company) throws SQLException;
 	public int modifyCompany(Company company) throws SQLException;
 	public int deleteCompany(String code) throws SQLException;
+	public ArrayList queryAllByCode(String code) throws SQLException;
 	
 	
 }

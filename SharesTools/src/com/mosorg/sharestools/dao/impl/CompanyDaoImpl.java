@@ -5,6 +5,8 @@ package com.mosorg.sharestools.dao.impl;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.ArrayList;
+import java.util.List;
 
 import com.mosorg.common.utils.convert.StringHelper;
 import com.mosorg.common.utils.db.DBUtils;
@@ -89,6 +91,22 @@ public class CompanyDaoImpl implements ICompanyDao {
 			company.setCommissionRate(rs.getBigDecimal("commissionRate"));
 		}
 		return company;
+	}
+
+	//模糊查询
+	public ArrayList queryAllByCode(String code) throws SQLException {
+		String sql="SELECT * FROM companys where code like '"+code+"'";
+		ArrayList<Company> companys=new ArrayList<Company>();
+		
+		rs=dbUtils.executeQuery(sql);
+		while(rs.next()){
+			Company company=new Company();
+			company.setCode(rs.getString("code"));
+			company.setName(rs.getString("name"));
+			company.setCommissionRate(rs.getBigDecimal("commissionRate"));
+			companys.add(company);
+		}
+		return companys;
 	}
 	
 

@@ -20,16 +20,8 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 	-->
   </head>
   
-  <body style="text-align:center;">
-    <table border="1">
-    <th align="center" bgcolor="green" colspan="2">证券公司信息管理</th>
-    <tr><td>
-     <ul>
-       <li><a href="company/queryCompany.jsp">查询证券公司信息</a></li>
-       <li><a href="company/addCompany.jsp">添加证券公司信息</a></li>
-     </ul>
+  <body >
+  <table><tr><td ><div style='color: green;'><%=request.getAttribute( "message")%></div></td><td ><a href='index.jsp'>返回首页</a></td></tr><table>
     
-    </td></tr>
-    </table>
   </body>
 </html>

@@ -61,7 +61,7 @@
 		<dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
-			<version>4.11-beta-1</version>
+			<version>4.13.1</version>
 			<!-- scope配置为test表示仅测试使用，发布包不会使用到该jar包。如果没有指定该作用域时，默认为compile -->
 			<scope>test</scope>
 		</dependency>
